@@ -1,0 +1,44 @@
+{
+  // editor
+  "editor.lineNumbers": "relative",
+  "editor.fontSize": 14,
+  "editor.minimap.enabled": false,
+  "editor.cursorSurroundingLines": 10,
+  "editor.accessibilitySupport": "off",
+  "editor.renderWhitespace": "none",
+  "editor.renderLineHighlight": "none",
+  "editor.folding": false,
+  "editor.overviewRulerBorder": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.occurrencesHighlight": "off",
+  "editor.glyphMargin": false,
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "Fira Code",
+  "editor.smoothScrolling": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+
+  // workbench
+  "workbench.colorTheme": "Gruvbox Dark Medium",
+  "workbench.layoutControl.enabled": false,
+
+  // window
+  "window.commandCenter": false,
+
+  // other
+  "breadcrumbs.enabled": false,
+
+  // vim
+  "vim.useSystemClipboard": true,
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.view.explorer"]
+    },
+    {
+      "before": ["<leader>", "p"],
+      "commands": ["workbench.action.quickOpen"]
+    }
+  ]
+}
