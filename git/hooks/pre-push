@@ -1,15 +1,10 @@
 #!/bin/bash
 
-# Extract the branch name from the push refspec
 while read local_ref local_sha remote_ref remote_sha
 do
-    # Extract the branch name from the full refspec
     branch_name=$(echo "$local_ref" | cut -d / -f 3)
-
-    # Define the regex pattern for allowed branch names
     pattern="^(BIFO|AVVIK)-[0-9]{1,3}$|^(NOISSUE|main)$"
 
-    # Check if the branch name matches the pattern
     if ! [[ $branch_name =~ $pattern ]]; then
         echo "Error: Branch name '$branch_name' does not match the required pattern '$pattern'"
         exit 1
