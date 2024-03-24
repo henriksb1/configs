@@ -1,6 +1,7 @@
 {
   // editor
-  "editor.lineNumbers": "relative",
+  "editor.lineNumbers": "on",
+  "editor.cursorBlinking": "solid",
   "editor.fontSize": 14,
   "editor.minimap.enabled": false,
   "editor.cursorSurroundingLines": 10,
@@ -19,7 +20,7 @@
   "editor.formatOnSave": true,
 
   // workbench
-  "workbench.colorTheme": "Gruvbox Dark Medium",
+  "workbench.colorTheme": "Naysayer88",
   "workbench.layoutControl.enabled": false,
 
   // window
@@ -35,10 +36,6 @@
     {
       "before": ["<leader>", "e"],
       "commands": ["workbench.view.explorer"]
-    },
-    {
-      "before": ["<leader>", "p"],
-      "commands": ["workbench.action.quickOpen"]
     }
   ]
 }
