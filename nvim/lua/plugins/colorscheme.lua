@@ -1,9 +1,22 @@
 return {
-  { "wittyjudge/gruvbox-material.nvim" },
   {
-    "LazyVim/LazyVim",
+    "craftzdog/solarized-osaka.nvim",
+    branch = "osaka",
+    lazy = true,
+    priority = 1000,
+    opts = function()
+      return {
+        transparent = false,
+      }
+    end,
+  },
+  {
+    "nvim-lualine/lualine.nvim",
+    event = "VeryLazy",
     opts = {
-      colorscheme = "gruvbox-material",
+      options = {
+        theme = "solarized_dark",
+      },
     },
   },
 }
