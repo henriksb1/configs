@@ -7,7 +7,7 @@ do
     branch_name=$(echo "$local_ref" | cut -d / -f 3)
 
     # Define the regex pattern for allowed branch names
-    pattern="^(BIFO|AVVIK)-[0-9]{1,3}$|^(NOISSUE|main$"
+    pattern="^(BIFO|AVVIK)-[0-9]{1,3}$|^(NOISSUE|main)$"
 
     # Check if the branch name matches the pattern
     if ! [[ $branch_name =~ $pattern ]]; then
