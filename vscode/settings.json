@@ -2,7 +2,7 @@
   // editor
   "editor.lineNumbers": "on",
   "editor.cursorBlinking": "solid",
-  "editor.fontSize": 14,
+  "editor.fontSize": 12,
   "editor.minimap.enabled": false,
   "editor.cursorSurroundingLines": 10,
   "editor.accessibilitySupport": "off",
@@ -13,14 +13,16 @@
   "editor.hideCursorInOverviewRuler": true,
   "editor.occurrencesHighlight": "off",
   "editor.glyphMargin": false,
-  "editor.fontLigatures": true,
+  // "editor.fontLigatures": true,
   "editor.fontFamily": "Fira Code",
   "editor.smoothScrolling": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
 
   // workbench
-  "workbench.colorTheme": "Naysayer88",
+  "workbench.colorTheme": "Kanagawa",
   "workbench.layoutControl.enabled": false,
 
   // window
@@ -29,13 +31,16 @@
   // other
   "breadcrumbs.enabled": false,
 
+  // make comments stand out
+  // "editor.tokenColorCustomizations": {
+  //   "[Kanagawa]": {
+  //     "comments": {
+  //       "foreground": "#FF9E3B"
+  //     }
+  //   }
+  // },
+
   // vim
   "vim.useSystemClipboard": true,
-  "vim.leader": "<space>",
-  "vim.normalModeKeyBindings": [
-    {
-      "before": ["<leader>", "e"],
-      "commands": ["workbench.view.explorer"]
-    }
-  ]
+  "vim.leader": "<space>"
 }
