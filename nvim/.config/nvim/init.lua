@@ -487,6 +487,11 @@ require("lazy").setup({
 				vim.lsp.enable('nil_ls')
 			end
 
+			-- TypeScript/JavaScript
+			if vim.fn.executable('typescript-language-server') == 1 then
+				vim.lsp.enable('ts_ls')
+			end
+
 			-- Global mappings.
 			-- See `:help vim.diagnostic.*` for documentation on any of the below functions
 			vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float)
