@@ -1,52 +1,52 @@
 [user]
-	name = Henrik Bråthen
-	email = henrikbs@proton.me
+  name = Henrik Bråthen
+  email = henrikbs@proton.me
 [ui "color"]
-	ui = always
+  ui = always
 [color]
-	ui = true
+  ui = true
 [core]
-	autocrlf = input
-	safecrlf = true
+  autocrlf = input
+  safecrlf = true
   excludesfile = ~/.gitignore
 [rebase]
   autoSquash = true
   autoStash = true
   updateRefs = true
 [merge]
-	tool = nvim -d
+  tool = nvim -d
 [alias]
-	c = commit
-	s = status
-	st = status
-	lg = log --oneline
-	last = log -1 HEAD
-	cl = log -p -- ':(exclude)Cargo.lock'
-	f = push --force-with-lease
-	# https://stackoverflow.com/a/11688523/472927
-	ss = "!f() { git stash show stash^{/$*} -p; }; f"
-	sa = "!f() { git stash apply stash^{/$*}; }; f"
-	sl = stash list
+  c = commit
+  s = status
+  st = status
+  lg = log --oneline
+  last = log -1 HEAD
+  cl = log -p -- ':(exclude)Cargo.lock'
+  f = push --force-with-lease
+  # https://stackoverflow.com/a/11688523/472927
+  ss = "!f() { git stash show stash^{/$*} -p; }; f"
+  sa = "!f() { git stash apply stash^{/$*}; }; f"
+  sl = stash list
 [pull]
-	ff = only
-	rebase = true
+  ff = only
+  rebase = true
 [push]
-	default = simple
-	autoSetupRemote = true
+  default = simple
+  autoSetupRemote = true
   followTags = true
 [help]
-	# https://blog.gitbutler.com/why-is-git-autocorrect-too-fast-for-formula-one-drivers/
-	autocorrect = prompt
+  # https://blog.gitbutler.com/why-is-git-autocorrect-too-fast-for-formula-one-drivers/
+  autocorrect = prompt
 [github]
-	user = henriksb1
+  user = henriksb1
 [diff]
-	algorithm = histogram
-	indentHeuristic = true
-	colorMoved = plain
+  algorithm = histogram
+  indentHeuristic = true
+  colorMoved = plain
   mnemonicPrefix = true
   renames = true
 [init]
-	defaultBranch = main
+  defaultBranch = main
 [fetch]
   prune = true
   pruneTags = true
