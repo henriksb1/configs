@@ -10,6 +10,7 @@
   autocrlf = input
   safecrlf = true
   excludesfile = ~/.gitignore
+  hooksPath = ~/.config/git/hooks
 [rebase]
   autoSquash = true
   autoStash = true
