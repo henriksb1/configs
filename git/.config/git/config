@@ -1,6 +1,6 @@
 [user]
-	name = Jon Gjengset
-	email = jon@thesquareplanet.com
+	name = Henrik Bråthen
+	email = henrikbs@proton.me
 [ui "color"]
 	ui = always
 [color]
@@ -8,6 +8,11 @@
 [core]
 	autocrlf = input
 	safecrlf = true
+  excludesfile = ~/.gitignore
+[rebase]
+  autoSquash = true
+  autoStash = true
+  updateRefs = true
 [merge]
 	tool = nvim -d
 [alias]
@@ -24,33 +29,36 @@
 	sl = stash list
 [pull]
 	ff = only
+	rebase = true
 [push]
 	default = simple
+	autoSetupRemote = true
+  followTags = true
 [help]
 	# https://blog.gitbutler.com/why-is-git-autocorrect-too-fast-for-formula-one-drivers/
 	autocorrect = prompt
-[url "git.launchpad.net"]
-	insteadOf = lp:
-[url "git@g.csail.mit.edu:"]
-	insteadOf = g:
-[url "git@github.com:"]
-	insteadOf = gh:
 [github]
-	user = jonhoo
+	user = henriksb1
 [diff]
 	algorithm = histogram
 	indentHeuristic = true
-[protocol]
-	version = 2
-[sendemail]
-	smtpserver = /usr/bin/msmtp
-	annotate = yes
-[diff "odf"]
-	textconv = odt2txt
+	colorMoved = plain
+  mnemonicPrefix = true
+  renames = true
 [init]
 	defaultBranch = main
-[filter "lfs"]
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
+[fetch]
+  prune = true
+  pruneTags = true
+  all = true
+[commit]
+  verbose = true
+[column]
+  ui = auto
+[branch]
+  sort = -committerdate
+[tag]
+  sort = version:refname
+#[rerere]
+#  enabled = true
+#  autoupdate = true
