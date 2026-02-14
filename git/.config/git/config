@@ -6,6 +6,7 @@
 [color]
   ui = true
 [core]
+  editor = vim
   autocrlf = input
   safecrlf = true
   excludesfile = ~/.gitignore
@@ -14,7 +15,7 @@
   autoStash = true
   updateRefs = true
 [merge]
-  tool = nvim -d
+  tool = vimdiff
 [alias]
   c = commit
   s = status
