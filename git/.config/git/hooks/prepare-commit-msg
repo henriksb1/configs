@@ -1,0 +1,21 @@
+#!/bin/sh
+
+# Skip for merge commits, amend, etc.
+case "$2" in
+  merge|squash|commit)
+    exit 0
+    ;;
+esac
+
+branch=$(git symbolic-ref --short HEAD 2>/dev/null)
+
+# Check if branch contains '/'
+case "$branch" in
+  */*)
+    ticket="${branch%%/*}"
+    # Prepend ticket to commit message if not already present
+    if ! grep -q "^$ticket" "$1"; then
+      sed -i '' "1s/^/$ticket: /" "$1"
+    fi
+    ;;
+esac
