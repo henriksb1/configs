@@ -1,4 +1,7 @@
 syntax on
+set background=dark
+let g:gruvbox_contrast_dark = 'hard'
+colorscheme gruvbox
   
 " Wrap gitcommit file types at the appropriate length
 filetype indent plugin on
