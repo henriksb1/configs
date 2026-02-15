@@ -4,4 +4,7 @@ syntax on
 filetype indent plugin on
 
 " Start cursor at end of first line for commit messages (after ticket prefix)
-autocmd FileType gitcommit call cursor(1, col('$'))
+augroup GitCommitCursor
+  autocmd!
+  autocmd FileType gitcommit call cursor(1, col('$')) | startinsert
+augroup END
