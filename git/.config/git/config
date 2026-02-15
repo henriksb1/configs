@@ -25,6 +25,7 @@
   last = log -1 HEAD
   cl = log -p -- ':(exclude)Cargo.lock'
   f = push --force-with-lease
+  dt = difftool
   # https://stackoverflow.com/a/11688523/472927
   ss = "!f() { git stash show stash^{/$*} -p; }; f"
   sa = "!f() { git stash apply stash^{/$*}; }; f"
