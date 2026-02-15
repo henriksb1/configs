@@ -47,6 +47,9 @@
   colorMoved = plain
   mnemonicPrefix = true
   renames = true
+  tool = vimdiff
+[difftool]
+  prompt = false
 [init]
   defaultBranch = main
 [fetch]
