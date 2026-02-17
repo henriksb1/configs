@@ -1,5 +1,50 @@
 syntax on
 
+" Line numbers
+set number
+set relativenumber
+
+" Allow mouse
+set mouse=a
+
+" Highlight current line
+set cursorline
+
+" Better search
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+
+" Smarter indentation
+set autoindent
+set smartindent
+set expandtab
+set shiftwidth=4
+set tabstop=4
+
+" Auto reload if changed externally
+set autoread
+
+" Persistent undo
+set undofile
+set undodir=~/.vim/undodir
+
+" System clipboard
+set clipboard=unnamedplus
+
+" Split like you should have
+set splitbelow
+set splitright
+
+" Don't reach for ESC
+inoremap jk <Esc>
+
+" Improve scrolling
+set scrolloff=5
+set sidescrolloff=5
+set signcolumn=yes
+
 " Add trailing newline
 set fixeol
 
